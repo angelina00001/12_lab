@@ -1,0 +1,7 @@
+[run]
+source = app
+omit = app/seed.py
+
+[report]
+fail_under = 70
+show_missing = True

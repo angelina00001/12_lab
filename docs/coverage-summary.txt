@@ -1,0 +1,19 @@
+# Отчёт coverage.py — Задание 7
+
+## Команда
+
+```powershell
+cd backend
+$env:SECRET_KEY="test-secret-key"
+$env:DATABASE_URL="sqlite://"
+pytest --cov=app --cov-report=term-missing --cov-report=html
+```
+
+HTML: `backend/htmlcov/index.html`
+
+## TOTAL
+681     56    92%
+
+Цель для отчёта: **≥90%**. CI требует **≥85%** (см. `.coveragerc`).
+
+Дополнительные тесты: `tests/test_coverage_extra.py`
